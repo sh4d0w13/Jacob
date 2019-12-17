@@ -1,0 +1,128 @@
+
+import os
+import time
+
+age = 0
+name = 0
+def main():
+    global age
+    global name
+    name = raw_input("Enter your name: ")
+    type(name)
+    time.sleep(0.3)
+    os.system('cls')
+    age = int(raw_input("Enter your age "))
+    type(age) 
+    time.sleep(0.3)
+    os.system('cls')
+    zodiac = raw_input("Enter your zodiac: ")
+    type(zodiac)
+    time.sleep(0.3)
+
+    
+    os.system('cls')
+    time.sleep(1)
+    your = ("Your age is ")
+
+    print("Can you confirm that ")
+    time.sleep(0.5)
+    print("Your name is " + name ) 
+    time.sleep(0.5)
+    print(your+str (age))
+    time.sleep(0.5)
+    print("And your zodiac sign is " + zodiac)
+    time.sleep(0.5)
+ 
+
+    answer = raw_input("Yes or no? ")
+    type(answer)
+    if answer == ("yes"):
+        os.system('cls')
+        print("Okay you have been registred")
+        time.sleep(3)
+        os.system('cls')
+        pass
+    else:
+        os.system('cls')
+        print("Restarting")
+        time.sleep(5)
+        os.system('cls')
+        main()
+        pass
+    
+if __name__ == '__main__':
+    main()
+    
+
+os.system('cls')
+time.sleep(1)
+
+
+#def second():
+pension = 73
+alder = pension -age
+if age < (18) :
+    under_age = raw_input("Im above the age of 18 yes or no ")
+    if under_age == ("yes"):
+        pass
+    else:
+        exit
+        pass
+else:
+        pass
+
+you = ("Years untill pension ")
+
+if age >17 <73:
+    print("Time until pension ")
+    time.sleep(1)
+    print("{}".format(alder) + you)
+    time.sleep(1)
+    print("So get out and party!")
+    time.sleep(3)
+    pass
+else: 
+    print("Go out and have fun ")
+    time.sleep(1)
+    print("Enjoy your pension ")
+    time.sleep(3)
+    pass
+
+os.system('cls')
+time.sleep(1)
+
+
+
+print("Preparing fibonacci sequence")
+print("Enter a number between 1-60")
+time.sleep(1)
+nterms = int(input("How many terms? "))
+# first two terms
+n1, n2 = 0, 1
+count = 0
+# check if the number of terms is valid
+if nterms <= 0:
+   print("Please enter a positive integer")
+elif nterms == 1:
+   print("Fibonacci sequence upto",nterms,":")
+   print(n1)
+else:
+    os.system('cls')
+
+    print("Please wait")
+    time.sleep(3)
+    os.system('cls')
+    print("Fibonacci sequence:")
+    while count < nterms:
+       print(n1)
+       nth = n1 + n2
+       # update values
+       n1 = n2
+       n2 = nth
+       count += 1
+       time.sleep(1)
+
+print("Thank you for joining")
+print("Have a great day")
+time.sleep(12)
+os.system('cls')    
